@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 130px;
+}
+h3
+{
+	margin-bottom: 5px;
+}
+a
+{
+	text-decoration: none;
+	color: #4f6af1;
+}
+ol li
+{
+  color: #3C3F58;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+ol li ul li
+{
+  color:rgb(112, 119, 147) !important;
+  font-size: 14px !important;
+}
+:root {
+  --offcanvas-width: 300px;
+  --topNavbarHeight: 56px;
+  --primary: #150f28;
+	--secondary: #2f3160;
+	--border-left:#64c4ff;
+
+}
+.navbar-container {
+  width: 100%;
+  background: linear-gradient(to right,var(--primary), var(--secondary));
+  height:75px;
+}
+a {
+  color: white;
+  text-decoration: none
+}
+
+a:active,
+a:focus,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .3s;
+  transition: all .3s
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+  margin-top:19px;
+  background:var(--primary)
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+/* navbar */
+.navbar-dark .navbar-toggler {
+    border: none;
+}
+/* metis menu */
+
+#metismenu 
+{
+    border-radius: 0 30px 30px 0;
+    padding: 12px 20px;
+    
+}
+
+.menu-item
+{
+	padding:7px;
+}
+#metismenu li
+{
+  margin-bottom:10px;
+  font-size:15px;
+}
+
+#metismenu a.active {
+  background-color: rgba(248, 69, 37, 0.1);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-left: 5px solid #00ff4e;
+  transition: background-color 0.3s, box-shadow 0.3s, border-left 0.3s;
+}
+
+#metismenu a {
+  margin-bottom: 10px;
+  display: block;
+  transition: background-color 0.3s, box-shadow 0.3s, border-left 0.3s;
+}
+
+#sidebar ul li .nav-second-level li a {
+  color: #828282;
+  /* color: #435174; */
+  /* color: #59678d; */
+  font-weight: 400;
+  padding-left: 6px;
+  font-size: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  
+  }
+}
+@media (max-width: 992px) {
+ 
+  .sidebar-nav {
+    margin-top:0px;
+  }
+}
+.navbar-brand p
+{
+	font-size:11px;
+	
+}
+/* content */
+.content {
+	flex: 1 1 0;
+	padding: 2rem;
+    margin-left: 300px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+	
+}
+.main-content-intro
+{
+	margin-top:100px;
+}
+.content h1 {
+	color: #262930;
+  font-size:36px;
+  font-weight: 700;
+	margin-bottom: 1rem;
+	
+}
+.content a
+{
+  text-decoration: none;
+  color: #4f6af1;
+}
+.content h2 {
+    font-size: 2rem;
+    color: #3C3F58;
+	margin-top: 1rem;
+    margin-bottom: 1rem;
+	font-weight: 400;
+}
+.content h5, h3 {
+  font-size: 20px;
+  color: #3C3F58;
+margin-top: 1rem;
+  margin-bottom: 1rem;
+font-weight: 700;
+}
+ul li, ol li
+{
+  font-size:15px;
+}
+
+
+.content .project-title 
+{
+	background:#f3f3f3;
+	padding:1rem;
+}
+.content .hr-tag {
+    width: 100%;
+    height: 2px;
+    background: #c1c5e198;
+}
+
+.content p {
+	color: #656973;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	font-size:15px;
+}
+
+
+  @media only screen and (min-width: 769px) and (max-width: 983px) {
+	.nft-ui img
+{
+	width: 190px;
+}
+
+	.nft-image img
+{
+	width: 190px;
+}
+.content {
+    margin-left: 0px;
+}
+.contact-card
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 10px;
+}
+
+}
+@media (max-width: 768px) {
+
+	.toggle-menu {
+		display: block;
+	}
+
+	.content {
+        margin-left: 0px;
+	}
+    
+
+	
+
