@@ -49,10 +49,12 @@
               </ul>
             </li>
             <li>
-              <a class="menu-item has-arrow" aria-expanded="false">Basic Configuration</a>
+              <a class="menu-item has-arrow" aria-expanded="false" href="#account">Basic Configuration</a>
               <ul class="nav-second-level list-unstyled">
-                <li><a href="#changing-store" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Changing your store currency</a></li>
-                <li><a href="#payments" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Payment Configuration</a></li>
+                <li><a href="#account" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Customer Account Creation</a></li>
+                <li><a href="#shipping" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Shipping Rates Setup</a></li>
+                <li><a href="#currency" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Currency & Language Settings</a></li>
+                <li><a href="#currency" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Setup Menu & Mega Menu</a></li>
               </ul>
             </li>
             <li>
@@ -201,11 +203,9 @@
           <h3>Step 1: Upload Settings Data For Home Page</h3>
           <p>To set up data for Home Page Layouts, please follow below instruction:</p>
           <ol>
+
             <li>
-              Click the <b>file to download</b> the corresponding "json" of the layout you want to open the data on a new tab.
-            </li>
-            <li>
-              <b>SELECT ALL</b> and <b>COPY</b>.
+              <b>SELECT ALL from index.json.text</b> and <b>COPY</b>.
             </li>
             <li>
               From your Shopify admin, go to <b>Themes -> Actions -> Edit Code</b>.
@@ -221,10 +221,8 @@
           <p>To set up the same data for Theme Settings, please follow below instruction:</p>
           <ol>
             <li>
-              Click the <b>file to download</b> the corresponding "json" of the layout you want to open the data on a new tab.
-            </li>
-            <li>
-              <b>SELECT ALL</b> and <b>COPY</b>.
+
+              <b>SELECT ALL from settings_data.text</b> and <b>COPY</b>.
             </li>
             <li>
               From your Shopify admin, go to <b>Themes -> Actions -> Edit Code</b>.
@@ -240,10 +238,7 @@
           <p>To set up data for Header Layouts, please follow below instruction:</p>
           <ol>
             <li>
-              Click the <b>file to download</b> the corresponding "json" of the layout you want to open the data on a new tab.
-            </li>
-            <li>
-              <b>SELECT ALL</b> and <b>COPY</b>.
+              <b>SELECT ALL from header.group.text</b> and <b>COPY</b>.
             </li>
             <li>
               From your Shopify admin, go to <b>Themes -> Actions -> Edit Code</b>.
@@ -260,10 +255,7 @@
           <p>To set up data for Footer Layouts, please follow below instruction:</p>
           <ol>
             <li>
-              Click the <b>file to download</b> the corresponding "json" of the layout you want to open the data on a new tab.
-            </li>
-            <li>
-              <b>SELECT ALL</b> and <b>COPY</b>.
+              <b>SELECT ALL from footer-group.text</b> and <b>COPY</b>.
             </li>
             <li>
               From your Shopify admin, go to <b>Themes -> Actions -> Edit Code</b>.
@@ -275,6 +267,52 @@
           <img src="assets/images/install-image/08.png" alt="" class="img-fluid">
         </div>
       </div>
+    </section>
+    <section id="account">
+      <h1>Customer Account Creation</h1>
+      <p>After creating an account with your store, tour customers can add their address details to their account so that the information auto-fills during checkout. Moreover, they can view their order history in your store and check the current order status after purchasing. For more details, please visit <a href="https://help.shopify.com/en/manual/customers/customer-accounts/new-customer-accounts" target="_blank">Customer accounts</a>
+      </p>
+      <div class="steps-msg">
+        <ol>
+          <li>Click <b>Settings</b> and then click <b>Customer accounts</b> from your <b>Shopify admin</b>.</li>
+          <li>Select <b>"Show login link in the header of online store and at checkout"</b> at Accounts in online store and checkout.</li>
+          <li>Click <b>Save</b> to save all changes.</li>
+        </ol>
+      </div>
+      <img src="assets/images/configuration/01.png" alt="" class="img-fluid mt-2">
+      <img src="assets/images/configuration/02.png" alt="" class="img-fluid mt-2">
+
+    </section>
+    <section id="shipping">
+      <h1>Shipping</h1>
+      <p>Suppose you have a business with multiple locations. In that case, you can set shipping rates based on each location within each shipping profile. This will let you have more control over your shipping costs.</p>
+      <p>For businesses with multiple locations, you can set shipping rates per location within each shipping profile for greater control over your shipping costs.</p>
+      <p>To set the shipping rate, please follow these steps:</p>
+      <ol>
+        <li>Go to <b>Shopify admin</b>, click <b>Settings</b>, and locate <b>Shipping and delivery</b>.</li>
+        <li>You can then configure the shipping rates based on the guidelines provided by this  <a href="https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/setting-up-shipping-rates" target="_blank">article from Shopify.</a></li>
+      </ol>
+
+    </section>
+    <section id="currency">
+      <h1>Currency & Language Settings</h1>
+      <p>Settings to display Currency & Language on your store.</p>
+      <div class="steps-msg">
+        <ol>
+          <li>In the theme editor, click <b>Theme settings</b> </li>
+          <li>Locate Currency & Language,</li>
+
+        </ol>
+      </div>
+      <div class="steps-msg mt-2">
+        <ol>
+          <li>Please <b>downloads flags</b> icons and upload from your store admin -> Content -> Files -> <a href="/admin/content/files">Upload files</a>   </li>
+        </ol>
+      </div>
+      <h3>Currency</h3>
+      <img src="assets/images/configuration/04.png" alt="" class="img-fluid mt-2">
+      <h3>Language</h3>
+      <img src="assets/images/configuration/05.png" alt="" class="img-fluid mt-2">
     </section>
     <section id="sources">
       <div class="main-content">

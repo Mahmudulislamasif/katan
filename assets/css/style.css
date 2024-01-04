@@ -254,7 +254,12 @@ ul li, ol li
 	.content {
         margin-left: 0px;
 	}
-    
+  
+}
 
-	
-
+.steps-msg
+{
+  border-left:4px solid green;
+  padding:15px;
+  background:#f4f7f4;
+}
