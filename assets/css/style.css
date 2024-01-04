@@ -263,3 +263,10 @@ ul li, ol li
   padding:15px;
   background:#f4f7f4;
 }
+
+.note
+{
+  padding: 1.5rem;
+  border-left:3px solid #5b99ea;
+  background: #f9fbfe;
+}
