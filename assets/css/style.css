@@ -124,6 +124,18 @@ a:hover {
   padding-bottom: 6px;
   margin: 0;
 }
+#sidebar ul li .nav-third-level li a {
+  color: #828282;
+  /* color: #435174; */
+  /* color: #59678d; */
+  font-weight: 400;
+  padding-left: 6px;
+  font-size: 13px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+  margin-top:10px;
+}
 
 @media (min-width: 992px) {
   body {
