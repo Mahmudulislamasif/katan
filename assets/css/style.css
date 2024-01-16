@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Nunito&family=Poppins&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    scroll-margin-top: 130px;
+  font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 130px;
 }
 h3
 {
@@ -20,14 +20,14 @@ a
 }
 ol li
 {
-  color: #3C3F58;
+  color: #222222;
   font-size: 18px;
   margin-bottom: 1rem;
   font-weight: 500;
 }
 ol li ul li
 {
-  color:rgb(112, 119, 147) !important;
+  color:#222222 !important;
   font-size: 14px !important;
 }
 :root {
@@ -142,6 +142,7 @@ a:hover {
 @media (min-width: 992px) {
   body {
     overflow: auto !important;
+    background:#fafdff;
   }
   main {
     margin-left: var(--offcanvas-width);
@@ -216,9 +217,8 @@ font-weight: 700;
 ul li, ol li
 {
   font-size:15px;
-  color:#656973;
+  color:#222222;
 }
-
 
 .content .project-title 
 {
@@ -232,10 +232,10 @@ ul li, ol li
 }
 
 .content p {
-	color: #656973;
-    margin-top: 20px;
-    margin-bottom: 20px;
-	font-size:15px;
+	color: #222222;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	font-size:17px;
 }
 
 
