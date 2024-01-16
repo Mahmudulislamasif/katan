@@ -18,6 +18,13 @@ a
 	text-decoration: none;
 	color: #4f6af1;
 }
+ul li
+{
+  color: #222222;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
 ol li
 {
   color: #222222;
@@ -283,7 +290,7 @@ ul li, ol li
 {
   padding: 1.5rem;
   border-left:3px solid #5b99ea;
-  background: #f9fbfe;
+  background: #f3f8ff;
 }
 
 .source-list-class
