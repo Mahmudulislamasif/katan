@@ -67,12 +67,10 @@
                 <li><a href="#logo" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Logo</a></li>
                 <li><a href="#general" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">General</a></li>
                 <li><a href="#typhography" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Typhography</a></li>
-
                 <li><a href="#color" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Colors</a></li>
                 <li><a href="#header" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Header</a></li>
                 <li><a href="#product-template" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Product Template</a></li>
                 <li><a href="#product-card" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Product Card</a></li>
-
                 <li><a href="#blog" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Blog</a></li>
                 <li><a href="#news-letter" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Newsletter popup</a></li>
                 <li><a href="#social-media" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Social Media</a></li>
@@ -86,10 +84,11 @@
                 <li><a href="#header-section" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Header</a></li>
                 <li><a href="#home-section" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Slide Show</a></li>
                 <li><a href="#feature-collection" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Feature Collection</a></li>
-                <li><a href="#product-block" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Product Block</a></li>
+                <li><a href="#product-tab" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Product Tab</a></li>
                 <li><a href="#look-book" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Look Book</a></li>
                 <li><a href="#builder" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Builder</a></li>
                 <li><a href="#brand-logos" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Brand Logos</a></li>
+                <li><a href="#product-block" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Product Block</a></li>
                 <li><a href="#customer-reviews" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Customer Reviews</a></li>
                 <li><a href="#featured-blogs" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Featured Blog Posts</a></li>
                 <li><a href="#collection-tabs" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">Collection Tabs</a></li>
@@ -180,7 +179,7 @@
         <ul>
           <li>Fully compatible with <b>Shopify OS 2.0 (sections on every page)</b></li>
           <li>Header and Footer Builder without code.</li>
-          <li>Advanced & easy to customized Mega menu </li>
+          <li>Advanced & easy to customized <b>Mega menu</b> </li>
           <li>Different types of sticky headers.</li>
           <li>Multiple Languages & Currencies</li>
           <li>Dynamic Product Filter & Filter by Tags, price, variation, vendor, etc. </li>
@@ -271,9 +270,6 @@
     <section id="demo-data">
       <div class="main-content">
         <h1>How to Insert Demo Data</h1>
-        <p>
-          Refer to our full video for instructions:
-        </p>
         <p>To set up the demo data for Katan Default Homepage Settings, please follow the below instructions:</p>
         <div>
           <h3>Step 1: Upload Settings Data For Home Page</h3>
@@ -344,10 +340,11 @@
         <h3>Step 5: Demo data guidelines for Home Page</h3>
         <p>Find theme main folder <b>DEMO_DATA.zip</b> > <b>Home Page</b>.</p>
         <div class="table-responsive">
-          <table class="table">
+          <table class="table table-bordered">
             <thead>
               <tr>
                 <th scope="col">Home Page</th>
+                <th scope="col">Json Home (with .json format)</th>
                 <th scope="col">Json Setting (with .json format)</th>
                 <th scope="col">Header (with .json format)</th>
                 <th scope="col">Footer(with .json format)</th>
@@ -409,14 +406,14 @@
           <li>Click <b>Save</b> to save all changes.</li>
         </ol>
       </div>
-    <div class="row">
-      <div class="col">
-        <img src="assets/images/configuration/01.png" alt="" class=" mt-2">
+      <div class="row">
+        <div class="col">
+          <img src="assets/images/configuration/01.png" alt="" class=" mt-2">
+        </div>
+        <div class="col">
+          <img src="assets/images/configuration/02.png" alt="" class=" mt-2">
+        </div>
       </div>
-      <div class="col">
-        <img src="assets/images/configuration/02.png" alt="" class=" mt-2">
-      </div>
-    </div>
 
     </section>
     <section id="shipping">
@@ -435,12 +432,6 @@
       <h3>Currency</h3>
       <div class="steps-msg">
         <ol>
-          <li>From your Shopify admin, go to <b>Settings</b> > <a href="https://admin.shopify.com/settings/markets" target="_blank">Markets</a> </li>
-          <li>Next to the name of the market, click <b>Manage</b>.</li>
-          <li>Next to <b>Products and pricing</b>, click <b>Manage</b>.</li>
-          <li>In the <b>Pricing</b> section, check <b>Show prices to customers in their local currency.</b></li>
-          <li>If you want to turn off local currencies, uncheck <b>Show prices to customers in their local currency</b>. When local currencies are turned off, all customers in that market will see prices in that market's base currency.</li>
-          <li>Click <b>Save</b>.</li>
           <li>In the theme editor, click <b>Theme settings</b> </li>
           <li>Locate Header</li>
         </ol>
@@ -448,12 +439,29 @@
       </div>
 
       <img src="assets/images/configuration/04.png" alt="" class="img-fluid mt-2">
+      <div>
+        <p><b>Show Currency?</b> Enable to display currency conversion on your store</p>
+        <p><b>Currency Manage by: </b>Choose currency display by Shopify default or AdornThemes</p>
+        <p><b>Enable Auto currency switcher: </b>Enable auto changed currency based on country.</p>
+        <p><b>Supported currencies: </b>add supported currencies name here.</p>
+        <p><b>Show currency codes: </b> Show currency code with product price.</p>
+        <p><b>Show Flag? </b>Display country flag with currency conversion dropdown.</p>
+      </div>
       <h3>Language</h3>
       <p>To learn how to display Language in detail, please visit this <a href="https://help.shopify.com/en/manual/markets/languages/manage-languages"> official Shopify article.</a> </p>
       <p>
       <p class="steps-msg">Please <a href="./assets/Country_Flags.zip">downloads flags</a> icons and upload from your store admin -> Content -> Files -> <a href="https://admin.shopify.com/content/files">Upload files</a></p>
       </p>
+
       <img src="assets/images/configuration/05.png" alt="" class="img-fluid mt-2">
+      <div>
+        <p><b>Show Language?</b> Enable to display language select menu on your store</p>
+        <p><b>Language Manage by </b>Choose which app to use. Both are paid.</p>
+        <p><b>Show Flag? </b>Display country flag with language menu.</p>
+        <p><b>Default Language: </b>Add default language name for your store.</p>
+        <p><b>Choose Language menu for Weglot: </b> Create and select language menu for weglot app.</p>
+        <p><b>Appearance: </b>Set dropdown text and background color.</p>
+      </div>
     </section>
     <section id="menu-items">
       <h1>Menu Items</h1>
@@ -485,17 +493,7 @@
       <p>Below is an image showing how to add Menu and Submenu items:</p>
       <img src="/assets/images/install-image/10.jpg" class="img-fluid mt-2" alt="">
 
-      <p>For Advanced mega menu, please follow the below instructions:</p>
-      <ul>
-        <li>You can change the Background container color in the Advanced Mega menu section</li>
-        <li>Please type the menu name where you want to show the mega menu items</li>
-        <li>Megamenu advance also allows you to set up the Background color and Badge setting by name and animation</li>
-        <li>You can control the Submenu &amp; Widget column width by Item per row</li>
-        <li>The most appealing feature in the Advanced mega menu is that you can add Sub menu widgets by <b>Product carousel, Banner, Banner+banner, &amp; Custom HTML</b></li>
-        <li>In Product carousel you can control the Carousel settings like <b>Selected collection, Image ratio, Maximum product to show, and Product show per row</b></li>
-        <li>In the Widget banner setting you can add banners and set custom links</li>
-      </ul>
-      <img src="/assets/images/install-image/12.jpg" class="img-fluid mt-2" alt="">
+
 
     </section>
     <section id="logo">
@@ -637,6 +635,102 @@
       <p>In the <b>Sales Notification</b> section, you have the option to enable/disable the option. If enabled, you can set the notification alignment and adjust the slider duration. Moreover, you can select specific products and input multiple locations.</p>
       <img src="assets/images/theme-settings/19.png" alt="" class="img-fluid mt-2">
     </section>
+    <section id="header-section">
+      <h1>Header</h1>
+      <p>By clicking the <b>add section</b> button, you can show other sections that can be added to the layout.
+      </p>
+      <img src="assets/images/feature-collection/25.png" alt="" class="img-fluid mt-2">
+      <p>To edit header section you can start edit from below option. </p>
+      <img src="assets/images/feature-collection/26.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">General Settings </th>
+            <td><b>Desktop menu:</b> Used to change main menu style for header.Here you can select meno to change the design for desktop.
+              <br>
+              <b>Mobile menu: </b>Used to change main menu style for header.Here you can select meno to change the design for mobile.
+              <br>
+              <b>Desktop Menu Font Size: </b>Adjust the font size of the main menu items on the desktop version.
+              <br>
+              <b>Desktop Submenu Font Size: </b>Customize the font size of submenu items within the desktop navigation.
+              <br>
+              <b>Menu font family: </b>Manage multiple options to change font family such as Deafult, Heading font, Alternative Font.
+              <br>
+              <b>Menu text transform: </b> Define the text transformation for menu items, allowing you to set whether the text should appear in normal, uppercase, lowercase, or capitalize.
+              <br>
+              <b>Font Weight: </b> Manage multiple options to change font weight such as Light, Normal, Medium etc .
+              <br>
+              <b>Primary menu item horizontal padding:</b>Adjust the horizontal padding for primary menu items using the controls provided.
+              <br>
+              <b>Primary menu item vertical padding:</b>Adjust the vertical padding for primary menu items using the controls provided.
+              <br>
+              <b>Sub menu container min width: </b>Set the minimum width of the submenu container using controls
+              <br>
+              <b>Sub menu item vertical padding: </b>Control the vertical padding of submenu items through the provided settings.
+              <br>
+              <b>Sub menu item horizontal padding: </b>Control the horizontal padding of submenu items through the provided settings.
+              <b>Primary Menu Item Color: </b>Set the default color for your primary menu items:
+              <br>
+              <b>Primary Menu Item Hover Color: </b>Define the color that primary menu items will change to when users hover over them.
+              <br>
+              <b>Sub Menu Container Background: </b>Specify the background color for the submenu container.
+              <br>
+              <b>Sub Menu Link Color: </b>Choose the default color for submenu links, ensuring clarity and readability within the dropdown navigation..
+              <br>
+              <b>Sub Menu Link Hover Color: </b>
+              Set the color that submenu links will transition to when users hover over them, providing a dynamic and responsive user experience
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Mobile Menu Settings</th>
+            <td><b>Mobile menu font size:</b> Controls the font size for mobile menu.
+              <br>
+              <b>Mobile dropdown menu font size :</b> Controls the font size for mobile menu.
+              <br>
+              <b>Mobile menu: </b>Used to change main menu style for header.Here you can select meno to change the design for mobile.
+              <br>
+              <b>Desktop Menu Font Size: </b>Adjust the font size of the main menu items on the desktop version.
+              <br>
+              <b>Desktop Submenu Font Size: </b>Customize the font size of submenu items within the desktop navigation.
+              <br>
+              <b>Menu font family: </b>Manage multiple options to change font family such as Deafult, Heading font, Alternative Font.
+              <br>
+              <b>Menu text transform: </b> Define the text transformation for menu items, allowing you to set whether the text should appear in normal, uppercase, lowercase, or capitalize.
+              <br>
+              <b>Font Weight: </b> Manage multiple options to change font weight such as Light, Normal, Medium etc .
+              <br>
+              <b>Primary menu item horizontal padding:</b>Adjust the horizontal padding for primary menu items using the controls provided.
+              <br>
+              <b>Primary menu item vertical padding:</b>Adjust the vertical padding for primary menu items using the controls provided.
+              <br>
+              <b>Sub menu container min width: </b>Set the minimum width of the submenu container using controls
+              <br>
+              <b>Sub menu item vertical padding: </b>Control the vertical padding of submenu items through the provided settings.
+              <br>
+              <b>Sub menu item horizontal padding: </b>Control the horizontal padding of submenu items through the provided settings.
+              <b>Primary Menu Item Color: </b>Set the default color for your primary menu items:
+              <br>
+              <b>Primary Menu Item Hover Color: </b>Define the color that primary menu items will change to when users hover over them.
+              <br>
+              <b>Sub Menu Container Background: </b>Specify the background color for the submenu container.
+              <br>
+              <b>Sub Menu Link Color: </b>Choose the default color for submenu links, ensuring clarity and readability within the dropdown navigation..
+              <br>
+              <b>Sub Menu Link Hover Color: </b>
+              Set the color that submenu links will transition to when users hover over them, providing a dynamic and responsive user experience
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
     <section id="home-section">
       <h1>Slide Show</h1>
       <p>To add this section, please follow the below steps:</p>
@@ -664,65 +758,83 @@
             <td>Enable/disable the box width</td>
           </tr>
           <tr>
-            <th scope="row"> Slider arrow indicators</th>
-            <td>Enable/disable arrow of the slider</td>
-
+            <th scope="row">Slideshow image border radius </th>
+            <td>Control slide show image border radius.This option will work when you enable box width slide show.</td>
           </tr>
           <tr>
-            <th scope="row"> Slider movement speed</th>
-            <td>Used to indicate amount of time required to slider open</td>
-
+            <th scope="row">Slideshow animation type </th>
+            <td>There are two types of slider animation effect <b>fade</b> & <b>slide</b>.</td>
           </tr>
           <tr>
-            <th scope="row"> Hide form mobile view</th>
-            <td>Hide slider arrow for mobile devices.</td>
+            <th scope="row">Automatic slider transition </th>
+            <td>This option work for slider autoplay.</td>
           </tr>
           <tr>
-            <th scope="row">Slider arrow size
-            </th>
-            <td>Use to increase or decreses size of the arrow.</td>
+            <th scope="row">Enable slider arrow indicators </th>
+            <td>Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.</td>
           </tr>
           <tr>
-            <th scope="row">Desktop Next & previous arrow vertical offset(%)
-            </th>
-            <td>Use to change the position of arrow.</td>
+            <th scope="row">Enable slider dots indicators</th>
+            <td>Enables/Disables slide dots indicator.There are three type of slider indicator <b>Bullets</b>, <b>Fraction</b>,
+              <b>progressbar</b>
+            </td>
           </tr>
           <tr>
-            <th scope="row">Mobile Next & previous arrow vertical offset(%)
-            </th>
-            <td>Use to change the position of arrow for mobile devices.</td>
+            <th scope="row">Allow slider to infinite Loop </th>
+            <td>Enables/Disables slide loop finite or infinite time.</td>
           </tr>
           <tr>
-            <th scope="row">Pagination Type
-            </th>
-            <td>Use to change slider design of dot pagination.</td>
+            <th scope="row">Slider movement speed </th>
+            <td>Control speen of slider movement.</td>
           </tr>
           <tr>
-            <th scope="row">Show progressbar timer
-            </th>
-            <td>If enable 'Automatic slider transition' then will show progressbar timer</td>
+            <th scope="row">Slider arrow size </th>
+            <td>Control slider arrow size.</td>
           </tr>
           <tr>
-            <th scope="row">
-              Enable thumbnail for slider
-            </th>
-            <td>Show/hide thumbnail image for slider</td>
+            <th scope="row">Slider arrow vertical offset control. </th>
+            <td>Slider vertical offset controller for <b>desktop</b> or <b>mobile</b> view.</td>
+          </tr>
+          <tr>
+            <th scope="row">Slider arrow horizontal offset control </th>
+            <td>Slider horizontal offset controller for <b>desktop</b> or <b>mobile</b> view.</td>
+          </tr>
+          <tr>
+            <th scope="row">Progressbar timer settings </th>
+            <td>If enable 'Automatic slider transition' & 'Show progressbar timer' then will show progressbar timer</td>
+          </tr>
+          <tr>
+            <th scope="row">Progressbar timer active color </th>
+            <td>Used to change active color of progress bar.</td>
+          </tr>
+          <tr>
+            <th scope="row">Adjust vertical placement </th>
+            <td>Controls vertical placement for progressbar.</td>
+          </tr>
+          <tr>
+            <th scope="row">Adjust horizontal placements </th>
+            <td>Controls horizontal placement for progressbar.</td>
+          </tr>
+          <tr>
+            <th scope="row">Active explore button </th>
+            <td>Enables/disables active explore button.</td>
+          </tr>
+          <tr>
+            <th scope="row">Thumbnail settings </th>
+            <td>
+              <b>Enable thumbnail for slider</b>: Enables/disables thumbnail for slider.
+              <br>
+              <b>Desktop view thumbnail show per row:</b>
+              Used to show number of thumbnail images for sliders.
+            </td>
           </tr>
         </tbody>
       </table>
     </section>
-    <section id="header-section">
-      <h1>Header</h1>
-      <p>By clicking the <b>add section</b> button, you can show other sections that can be added to the layout.
-      </p>
-      <img src="assets/images/feature-collection/25.png" alt="" class="img-fluid mt-2">
-      <p>To edit header section you can start edit from below option. </p>
-      <img src="assets/images/feature-collection/26.jpg" alt="" class="img-fluid mt-2">
-    </section>
     <section id="feature-collection">
       <h1>Feature Collection</h1>
       <img src="assets/images/feature-collection/01.jpg" alt="" class="img-fluid mt-2">
-      <table class="table">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -735,26 +847,56 @@
             <td>Manage to change layout design of Feature Collections</td>
           </tr>
           <tr>
-            <th scope="row">Background Color</th>
+            <th scope="row">Enable full width section </th>
+            <td>Enables/disables full width for feature Collections</td>
+          </tr>
+          <tr>
+            <th scope="row">Background color</th>
             <td>Used to change background color of Feature Collections</td>
 
+          </tr>
+          <tr>
+            <th scope="row">Background image</th>
+            <td>Used to change background image of Feature Collections</td>
           </tr>
           <tr>
             <th scope="row">Title, Select title tag, Sub title , Description</th>
             <td>User can change title, title text size, subtitle text, and description of the feature colectoion</td>
           </tr>
           <tr>
-            <th scope="row">General Style</th>
-            <td>This section is used to change alighment of the text and and color of the text</td>
+            <th scope="row">Column gutter settings</th>
+            <td>Controls the gap between grid card for both mobile and desktop devices. </td>
           </tr>
-
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">General Style</th>
+            <td><b>Title box text alignment:</b> used to change alignment of text left, right, center
+              <br>
+              <b>Title box bottom space:</b> controls bottom space for title.
+              <br>
+              <b>Title box max width(px):</b> controls width of the title box.
+              <br>
+              <b>Title color:</b> used to change color of title.
+              <br>
+              <b>Sub title color:</b> used to change color of subtitle color.
+              <br>
+              <b>Sub title background</b> used to change color of subtitle background color color
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
-    <section id="product-block">
-      <h1>Product Block</h1>
-      <img src="assets/images/feature-collection/02.png" alt="" class="img-fluid mt-2">
-      <table class="table">
+    <section id="product-tab">
+      <h1>Product Tab</h1>
+      <img src="assets/images/feature-collection/27.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -763,30 +905,75 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Layout </th>
-            <td>Grid Layout: Divide card into grid to make responsive for all design</td>
-          </tr>
-          <tr>
-            <th scope="row">Background Color</th>
-            <td>Used to change background color.</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Background Gradient</th>
-            <td>Used to change gradient color of background.</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Title, Select title tag, Sub title , Description</th>
-            <td>User can change title, title text size, subtitle text, and description of the Product Block</td>
-          </tr>
-          <tr>
             <th scope="row">General Style</th>
-            <td>This section is used to change alighment of the text and and color of the text</td>
+            <td><b>Enable full width section:</b> enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+              <b>subtitle: </b> used to change subtitle of the text.
+              <br>
+              <b>Description: </b> add some description text to input field.
+            </td>
           </tr>
           <tr>
-            <th scope="row">Collection Grid Settings</th>
-            <td>This section is used to add some grid to colection.</td>
+            <th scope="row">Collection grid settings
+            </th>
+            <td>
+              <b>Layout type:</b> There are two types of layout grid & carousel slide you can both style to this section.
+              <br>
+              <b>Background gradient color:</b> Thange background gradient color for section.
+              <br>
+              <b>Maximum product to show:</b> Controls number of products to show.
+              <br>
+              <b>Desktop column per row:</b> Used to manage column for desktop device.
+              <br>
+              <b>Tablet column per row: </b> Used to manage column for tablet device.
+              <br>
+              <b>Mobile column per row: </b> Used to manage column for tablet device.
+              <br>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Settings for slider
+            </th>
+            <td>
+              <b>Automatic slider transition:</b>This option work for slider autoplay.
+              <br>
+              <b>Enable slider arrow indicators:</b> Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.
+              <br>
+              <b>
+                Enable slider dots indicators:</b> Enables/Disables slide dots indicator.There are three type of slider indicator Bullets, Fraction, progressbar.
+              <br>
+              <b>
+                Allow slider to infinite Loop:</b> Enables/Disables slide loop finite or infinite time..
+              <br>
+              <b>
+                Enable slider center mode:</b> Enables/Disables slider for center mode.
+              <br>
+              <b>
+                Turn on Two-Row slider mode:</b> Divide slider to row .
+              <br>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -794,12 +981,7 @@
     <section id="look-book">
       <h1>Look Book</h1>
       <img src="assets/images/feature-collection/14.jpg" alt="" class="img-fluid mt-2">
-
-    </section>
-    <section id="builder">
-      <h1>Builder</h1>
-      <img src="assets/images/feature-collection/15.jpg" alt="" class="img-fluid mt-2">
-      <table class="table">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -808,30 +990,95 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Layout </th>
-            <td>Grid Layout: Divide card into grid to make responsive for all design</td>
+            <th scope="row">General Style</th>
+            <td><b>Enable full width section:</b> enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+            </td>
           </tr>
           <tr>
-            <th scope="row">Background Color</th>
-            <td>Used to change background color.</td>
-
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
           </tr>
           <tr>
-            <th scope="row">Background Gradient</th>
-            <td>Used to change gradient color of background.</td>
-
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
           </tr>
           <tr>
-            <th scope="row">Title, Select title tag, Sub title , Description</th>
-            <td>User can change title, title text size, subtitle text, and description of the Product Block</td>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
+            </td>
           </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="builder">
+      <h1>Builder</h1>
+      <img src="assets/images/feature-collection/15.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
           <tr>
             <th scope="row">General Style</th>
-            <td>This section is used to change alighment of the text and and color of the text</td>
+            <td><b>Enable full width section: </b> Enables/disables width for product tab section.
+              <br>
+              <b>Desktop column gap(px): </b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px): </b> Manage to gap between card for mobile devices.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background position: </b>If you want to add background postition at first you have to add background image then you can add multiple position like <b>Top center, Top Left, Center center, Bottom center, Left Center, Left bottom, Left bottom, Right top, Right center, Right bottom</b>.
+              <br>
+              <b>Background size:</b> To handle background position you can add multiple option like: <b>Auto, Contain, Cover, Custom</b>. If set background size 'custom' then will work this field, also using size including 'px,em,%,rem etc.' like this '50%,10rem,300px'
+              <br>
+              <b>Dektop background custom size : </b> You can control custom background size for mobile.
+              <br>
+              <b>Mobile background custom size : </b> You can make custom background size for desktop.
+              <br>
+              <b>Enable background parallax : </b> Enables/disables background parallax for product tab section
+            </td>
           </tr>
           <tr>
-            <th scope="row">Collection Grid Settings</th>
-            <td>This section is used to add some grid to colection.</td>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section style settings</th>
+            <td><b>Section text alignment: </b> Used to manage text alignment like: left, right, center.
+              <br>
+              <b>Section vertical alignment: </b> Used to manage section vertical alignment like: Top, Middle, Bottom.
+              <br>
+              <b>Section Z-Index: </b> Used to manage stack order for this section.
+              <br>
+              <b>Section custom class
+                : </b> You can use custom class for this section.
+              <br>
+              <b>Mobile settings
+                : </b> Enables/disables reverse of the row for mobile devices.
+              <br>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -839,7 +1086,7 @@
     <section id="brand-logos">
       <h1>Brand Logos</h1>
       <img src="assets/images/feature-collection/03.jpg" alt="" class="img-fluid mt-2">
-      <table class="table">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -857,34 +1104,118 @@
             </td>
           </tr>
           <tr>
-            <th scope="row">Background Color</th>
-            <td>Used to change background color.</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Background Gradient</th>
-            <td>Used to change gradient color of background.</td>
-
-          </tr>
-          <tr>
-            <th scope="row">Title, Select title tag, Sub title , Description</th>
-            <td>User can change title, title text size, subtitle text, and description of the Product Block</td>
-          </tr>
-          <tr>
             <th scope="row">General Style</th>
-            <td>This section is used to change alighment of the text and and color of the text</td>
+            <td><b>Enable full width section:</b> enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+              <b>subtitle: </b> used to change subtitle of the text.
+              <br>
+              <b>Description: </b> add some description text to input field.
+            </td>
           </tr>
           <tr>
-            <th scope="row">Collection Grid Settings</th>
-            <td>This section is used to add some grid to colection.</td>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Grid settings</th>
+            <td>There are three types of grid settings such as <b>Desktop column per row</b>, <b>Tablet column per row</b>, <b>Mobile column per row</b> you can manage number of products show for each devices. </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Settings for slider
+            </th>
+            <td>
+              <b>Automatic slider transition:</b>This option work for slider autoplay.
+              <br>
+              <b>Enable slider arrow indicators:</b> Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.
+              <br>
+              <b>
+                Enable slider dots indicators:</b> Enables/Disables slide dots indicator.There are three type of slider indicator Bullets, Fraction, progressbar.
+              <br>
+              <b>
+                Allow slider to infinite Loop:</b> Enables/Disables slide loop finite or infinite time..
+              <br>
+              <b>
+                Enable slider center mode:</b> Enables/Disables slider for center mode.
+              <br>
+              <b>
+                Turn on Two-Row slider mode:</b> Divide slider to row .
+              <br>
+              <b>Slider movement speed: </b> Controls slider movement trasition time for carousel.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Slider Next & Previous arrow settings
+            </th>
+            <td>
+              <b>Always show arrow:</b>Controls show/hide arrow button for slider.
+              <br>
+              <b>Desktop Next & previous arrow vertical offset(%):</b> Adjust the vertical positioning of the next and previous arrows on desktop devices by specifying a percentage offset. This setting allows you to fine-tune the placement of these navigation elements, ensuring optimal visual harmony and usability within the desktop interface.
+              <br>
+              <b>
+                Mobile Next & previous arrow vertical offset(%):</b> Tailor the vertical placement of the next and previous arrows specifically for mobile devices by indicating a percentage offset. This customization ensures that the arrows are appropriately positioned on smaller screens, maintaining a user-friendly and aesthetically pleasing experience on mobile platforms.
+              <br>
+              <b>
+                Previous arrow horizontal Desktop offset(%):</b> Fine-tune the horizontal positioning of the previous arrow on desktop screens with a percentage offset. This setting allows you to control the left or right alignment of the previous arrow, ensuring a seamless integration into the desktop layout.
+              <br>
+              <b>
+                Previous arrow horizontal Mobile offset(%):</b> Customize the horizontal placement of the previous arrow on mobile devices with a specified percentage offset. This adjustment is crucial for optimizing the arrow's position within the limited screen real estate of mobile interfaces, contributing to a smoother and more user-friendly navigation experience.
+              <br>
+              <b>
+                Next arrow horizontal Desktop offset(%):</b> Modify the horizontal positioning of the next arrow on desktop displays by providing a percentage offset. This setting allows for precise control over the left or right alignment of the next arrow, ensuring it complements the overall design and functionality of the desktop interface.
+              <br>
+              <b>Next arrow horizontal Mobile offset(%): </b> Define the horizontal placement of the next arrow on mobile screens with a designated percentage offset. This customization is essential for ensuring that the next arrow aligns harmoniously within the constraints of mobile layouts, enhancing the overall navigation experience on smaller screens.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section style settings
+            </th>
+            <td>
+              <b>Enable image grayscale:</b>Toggle this setting to activate grayscale mode for images on this platform. When enabled, this feature will convert color images to grayscale, removing their color saturation..
+              <br>
+
+              <b>Title box text alignment: </b> Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation.
+              <br>
+              <b>Title box bottom space: </b>Controls bottom space for title.
+              <br>
+              <b>Title box max width(px): </b>Define the maximum width of the title box to control the spatial dimensions of the displayed content.
+              <br>
+              <b>Title Color: </b>Set the color of the title text to establish the visual style and prominence of the primary content..
+              <br>
+              <b>Subtitle Color & Subtitle Background: </b>Customize the color of the subtitle text and its background, ensuring a harmonious and visually appealing combination for supplementary content within the title box.
+              <br>
+            </td>
           </tr>
         </tbody>
       </table>
     </section>
-    <section id="customer-reviews">
-      <h1>Customer Reviews</h1>
-      <img src="assets/images/feature-collection/04.jpg" alt="" class="img-fluid mt-2">
-      <table class="table">
+    <section id="product-block">
+      <h1>Product Block</h1>
+      <img src="assets/images/feature-collection/02.png" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -895,43 +1226,300 @@
           <tr>
             <th scope="row">Layout </th>
             <td><b>Grid Layout:</b> Divide card into grid to make responsive for all design
-
+              <br>
+              <b>Carousal Layout:</b> Used to change grid to carousel layout
+              <br>
             </td>
           </tr>
           <tr>
-            <th scope="row">Background Color</th>
-            <td>Used to change background color.</td>
-
+            <th scope="row">General Style</th>
+            <td><b>Enable full width section:</b> enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+              <b>subtitle: </b> used to change subtitle of the text.
+              <br>
+              <b>Description: </b> add some description text to input field.
+              <br>
+              <b>Button text: </b> Specify the text to be displayed on the button
+              <br>
+              <b>Button link: </b> Input the URL or destination link for the button, directing users to the designated page or resource upon clicking.
+              <br>
+              <b>Select Collection: </b>Choose a specific collection for the button, providing a seamless way to associate it with relevant content or products on your platform.
+              <br>
+              <b>Select Specific Products: </b>Choose particular products to associate with the current configuration, ensuring that the button or element is directly linked to the specified items for a more targeted and personalized user experience.
+            </td>
           </tr>
-
           <tr>
-            <th scope="row">Title, Select title tag, Sub title , Description</th>
-            <td>User can change title, title text size, subtitle text, and description of the Product Block</td>
+            <th scope="row">Image Ratio</th>
+            <td><b>Original:</b> Maintain the original aspect ratio of images for a true representation of the content.
+              <br>
+              <b>Portrait:</b> Opt for a portrait-oriented image ratio, ideal for emphasizing vertical content.
+              <br>
+              <b>Square:</b> Select a square image ratio for a balanced and uniform presentation, suitable for various design scenarios.
+              <br>
+            </td>
           </tr>
           <tr>
-            <th scope="row">Settings for slider</th>
-
-            <td><b>Enable quote icon?</b> : You can enable/disable icons of reviews
+            <th scope="row">Maximum product to show</th>
+            <td><b>Maximum product to show:</b> Set the limit for the maximum number of products to be displayed.
               <br>
-              <b>
-                Automatic slider transition:</b> Make slider trasition change
+              <b>Desktop Column per Row: </b> Customize the column layout for tablet devices.
               <br>
-              <b>
-                Enable slider arrow indicators: </b> Enble or desiable arrow indicators
+              <b>Tablet Column per Row: </b> Customize the column layout for tablet devices.
               <br>
-              <b>Enable slider dots indicators: Enble or desiable dot indicators for slider. </b>
+              <b>Mobile Column per Row: </b> Customize the column layout for mobile devices.
               <br>
-              <b>Enable slider center mode:</b> Used to make center mode of the slider.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
             </td>
           </tr>
 
+          <tr>
+            <th scope="row">Settings for slider
+            </th>
+            <td>
+              <b>Automatic slider transition:</b>This option work for slider autoplay.
+              <br>
+              <b>Enable slider arrow indicators:</b> Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.
+              <br>
+              <b>
+                Enable slider dots indicators:</b> Enables/Disables slide dots indicator.There are three type of slider indicator Bullets, Fraction, progressbar.
+              <br>
+              <b>
+                Allow slider to infinite Loop:</b> Enables/Disables slide loop finite or infinite time..
+              <br>
+              <b>
+                Enable slider center mode:</b> Enables/Disables slider for center mode.
+              <br>
+              <b>
+                Turn on Two-Row slider mode:</b> Divide slider to row .
+              <br>
+              <b>Slider movement speed: </b> Controls slider movement trasition time for carousel.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Slider Next & Previous arrow settings
+            </th>
+            <td>
+              <b>Always show arrow:</b>Controls show/hide arrow button for slider.
+              <br>
+              <b>Desktop Next & previous arrow vertical offset(%):</b> Adjust the vertical positioning of the next and previous arrows on desktop devices by specifying a percentage offset. This setting allows you to fine-tune the placement of these navigation elements, ensuring optimal visual harmony and usability within the desktop interface.
+              <br>
+              <b>
+                Mobile Next & previous arrow vertical offset(%):</b> Tailor the vertical placement of the next and previous arrows specifically for mobile devices by indicating a percentage offset. This customization ensures that the arrows are appropriately positioned on smaller screens, maintaining a user-friendly and aesthetically pleasing experience on mobile platforms.
+              <br>
+              <b>
+                Previous arrow horizontal Desktop offset(%):</b> Fine-tune the horizontal positioning of the previous arrow on desktop screens with a percentage offset. This setting allows you to control the left or right alignment of the previous arrow, ensuring a seamless integration into the desktop layout.
+              <br>
+              <b>
+                Previous arrow horizontal Mobile offset(%):</b> Customize the horizontal placement of the previous arrow on mobile devices with a specified percentage offset. This adjustment is crucial for optimizing the arrow's position within the limited screen real estate of mobile interfaces, contributing to a smoother and more user-friendly navigation experience.
+              <br>
+              <b>
+                Next arrow horizontal Desktop offset(%):</b> Modify the horizontal positioning of the next arrow on desktop displays by providing a percentage offset. This setting allows for precise control over the left or right alignment of the next arrow, ensuring it complements the overall design and functionality of the desktop interface.
+              <br>
+              <b>Next arrow horizontal Mobile offset(%): </b> Define the horizontal placement of the next arrow on mobile screens with a designated percentage offset. This customization is essential for ensuring that the next arrow aligns harmoniously within the constraints of mobile layouts, enhancing the overall navigation experience on smaller screens.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Section style settings
+            </th>
+            <td>
+              <b>Button Type:</b>There are three types of button <b>Primary Button</b>,<b>Secondary Button</b>, <b>Invert Button</b> you can change button style by selecting this options.
+              <br>
+
+              <b>Title box text alignment: </b> Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation.
+              <br>
+              <b>Title box bottom space: </b>Controls bottom space for title.
+              <br>
+              <b>Title box max width(px): </b>Define the maximum width of the title box to control the spatial dimensions of the displayed content.
+              <br>
+              <b>Title Color: </b>Set the color of the title text to establish the visual style and prominence of the primary content..
+              <br>
+              <b>Subtitle Color & Subtitle Background: </b>Customize the color of the subtitle text and its background, ensuring a harmonious and visually appealing combination for supplementary content within the title box.
+              <br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="customer-reviews">
+      <h1>Customer Reviews</h1>
+      <img src="assets/images/feature-collection/04.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Review style layout </th>
+            <td>
+              There are two type of layout: Layout 1 and Layout 2 you can change layout style for review section.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">General Style</th>
+            <td>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Enable full width section:</b> enables/disables width for product tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+              <b>subtitle: </b> used to change subtitle of the text.
+              <br>
+              <b>Description: </b> add some description text to input field.
+              <br>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Grid settings</th>
+            <td>There are three types of grid settings such as <b>Desktop column per row</b>, <b>Tablet column per row</b>, <b>Mobile column per row</b> you can manage number of products show for each devices. </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">Settings for slider
+            </th>
+            <td>
+              <b>Enable quote icon?</b> Enables/disables quote icon for review.
+              <b>Automatic slider transition:</b>This option work for slider autoplay.
+              <br>
+              <b>Enable slider arrow indicators:</b> Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.
+              <br>
+              <b>
+                Enable slider dots indicators:</b> Enables/Disables slide dots indicator.There are three type of slider indicator Bullets, Fraction, progressbar.
+              <br>
+              <b>
+                Allow slider to infinite Loop:</b> Enables/Disables slide loop finite or infinite time..
+              <br>
+              <b>
+                Enable slider center mode:</b> Enables/Disables slider for center mode.
+              <br>
+              <b>
+                Turn on Two-Row slider mode:</b> Divide slider to row .
+              <br>
+              <b>Slider movement speed: </b> Controls slider movement trasition time for carousel.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Slider Next & Previous arrow settings
+            </th>
+            <td>
+
+              <b>Desktop Next & previous arrow vertical offset(%):</b> Adjust the vertical positioning of the next and previous arrows on desktop devices by specifying a percentage offset. This setting allows you to fine-tune the placement of these navigation elements, ensuring optimal visual harmony and usability within the desktop interface.
+              <br>
+              <b>
+                Mobile Next & previous arrow vertical offset(%):</b> Tailor the vertical placement of the next and previous arrows specifically for mobile devices by indicating a percentage offset. This customization ensures that the arrows are appropriately positioned on smaller screens, maintaining a user-friendly and aesthetically pleasing experience on mobile platforms.
+              <br>
+              <b>
+                Previous arrow horizontal Desktop offset(%):</b> Fine-tune the horizontal positioning of the previous arrow on desktop screens with a percentage offset. This setting allows you to control the left or right alignment of the previous arrow, ensuring a seamless integration into the desktop layout.
+              <br>
+              <b>
+                Previous arrow horizontal Mobile offset(%):</b> Customize the horizontal placement of the previous arrow on mobile devices with a specified percentage offset. This adjustment is crucial for optimizing the arrow's position within the limited screen real estate of mobile interfaces, contributing to a smoother and more user-friendly navigation experience.
+              <br>
+              <b>
+                Next arrow horizontal Desktop offset(%):</b> Modify the horizontal positioning of the next arrow on desktop displays by providing a percentage offset. This setting allows for precise control over the left or right alignment of the next arrow, ensuring it complements the overall design and functionality of the desktop interface.
+              <br>
+              <b>Next arrow horizontal Mobile offset(%): </b> Define the horizontal placement of the next arrow on mobile screens with a designated percentage offset. This customization is essential for ensuring that the next arrow aligns harmoniously within the constraints of mobile layouts, enhancing the overall navigation experience on smaller screens.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">General style
+            </th>
+            <td>
+              <b>Title box text alignment: </b> Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation.
+              <br>
+              <b>Title box bottom space: </b>Controls bottom space for title.
+              <br>
+              <b>Title box max width(px): </b>Define the maximum width of the title box to control the spatial dimensions of the displayed content.
+              <br>
+              <b>Title Color: </b>Set the color of the title text to establish the visual style and prominence of the primary content..
+              <br>
+              <b>Subtitle Color & Subtitle Background: </b>Customize the color of the subtitle text and its background, ensuring a harmonious and visually appealing combination for supplementary content within the title box.
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Review box settings
+            </th>
+            <td>
+              <b>Review name font size: </b> Control font size for reviews text.
+              <br>
+              <b>Review name font family: </b>Manage multiple options to change font family such as Body font, Headeing font, Alternative Font.
+              <br>
+              <b>Review name font weight: </b>Manage multiple options to change font weight such as Light, Normal, Medium etc.
+              <br>
+              <b>Review designation font size: </b>Adjust the font size of the review designation to control the reviewer's title.
+              <br>
+              <b>Review Box Border Radius:: </b>Define the border radius for the review box, shaping its corners and creating a visually appealing container for user reviews.
+              <br>
+              <b>Review Box Background: </b>Set the background color for the review box, customizing its visual appearance to match the overall design scheme.
+              <br>
+              <b>Enable Border in Review Star Area: </b>Toggle the option to add a border around the star rating area.
+              <br>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>
     <section id="featured-blogs">
       <h1>Featured Blogs Post</h1>
       <img src="assets/images/feature-collection/16.jpg" alt="" class="img-fluid mt-2">
-      <table class="table">
+      <table class="table table-bordered">
         <thead>
           <tr>
             <th scope="col">Settings</th>
@@ -940,38 +1528,139 @@
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Layout </th>
-            <td><b>Grid Layout:</b> Divide card into grid to make responsive for all design
-
+            <th scope="row">General Style</th>
+            <td>
+              <b>Enable full width section:</b> Enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+              <b>subtitle: </b> used to change subtitle of the text.
+              <br>
+              <b>Description: </b> add some description text to input field.
+              <br>
+              <b>Button text: </b> Specify the text to be displayed on the button
+              <br>
+              <b>Button link: </b> Input the URL or destination link for the button, directing users to the designated page or resource upon clicking.
+              <br>
             </td>
           </tr>
           <tr>
-            <th scope="row">Background Color</th>
-            <td>Used to change background color.</td>
-
-          </tr>
-
-          <tr>
-            <th scope="row">Title, Select title tag, Sub title , Description</th>
-            <td>User can change title, title text size, subtitle text, and description of the Product Block</td>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
           </tr>
           <tr>
-            <th scope="row">Settings for slider</th>
-
-            <td><b>Enable quote icon?</b> : You can enable/disable icons of reviews
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Blog & Grid Style</th>
+            <td><b>Choose a Featured Blog Post:</b> You can change each blogs section according to category.
               <br>
-              <b>
-                Automatic slider transition:</b> Make slider trasition change
+              <b>Count Title Word Length: </b> Controls the word length for blogs.
               <br>
-              <b>
-                Enable slider arrow indicators: </b> Enble or desiable arrow indicators
+              <b>Show Excerpt:</b> Show/hide blog details into card.
               <br>
-              <b>Enable slider dots indicators: Enble or desiable dot indicators for slider. </b>
+              <b>Show Read More:</b> Show/hide read/more button to blogs.
               <br>
-              <b>Enable slider center mode:</b> Used to make center mode of the slider.
+              <b>Grid Type: </b> There are two types of grid fisrt one id grid blog and last one is carousal slide.
+              <br>
+              <b>Maximum Number of Blog Posts to Display: </b>Option for showing number of blogs to be added.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
             </td>
           </tr>
 
+          <tr>
+            <th scope="row">Settings for slider
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b> Controls gap for slider in desktop mode.
+              <br>
+              <b>Tablet column per row:</b> Controls gap for slider in tablet mode.
+              <br>
+              <b>Mobile column per row:</b> Controls gap for slider in mobile mode.
+              <br>
+              <b>Automatic slider transition:</b>This option work for slider autoplay.
+              <br>
+              <b>Enable slider arrow indicators:</b> Enables/Disables slide show arrow.There are more options available for slider indicators, like color, background, etc.
+              <br>
+              <b>
+                Enable slider dots indicators:</b> Enables/Disables slide dots indicator.There are three type of slider indicator Bullets, Fraction, progressbar.
+              <br>
+              <b>
+                Allow slider to infinite Loop:</b> Enables/Disables slide loop finite or infinite time..
+              <br>
+              <b>
+                Enable slider center mode:</b> Enables/Disables slider for center mode.
+              <br>
+              <b>
+                Turn on Two-Row slider mode:</b> Divide slider to row .
+              <br>
+              <b>Slider movement speed: </b> Controls slider movement trasition time for carousel.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Slider Next & Previous arrow settings
+            </th>
+
+            <td>
+
+              <b>Always show arrow: </b>Controls show/hide arrow button for slider.
+              <br>
+
+              <b>Desktop Next & previous arrow vertical offset(%):</b> Adjust the vertical positioning of the next and previous arrows on desktop devices by specifying a percentage offset. This setting allows you to fine-tune the placement of these navigation elements, ensuring optimal visual harmony and usability within the desktop interface.
+              <br>
+              <b>
+                Mobile Next & previous arrow vertical offset(%):</b> Tailor the vertical placement of the next and previous arrows specifically for mobile devices by indicating a percentage offset. This customization ensures that the arrows are appropriately positioned on smaller screens, maintaining a user-friendly and aesthetically pleasing experience on mobile platforms.
+              <br>
+              <b>
+                Previous arrow horizontal Desktop offset(%):</b> Fine-tune the horizontal positioning of the previous arrow on desktop screens with a percentage offset. This setting allows you to control the left or right alignment of the previous arrow, ensuring a seamless integration into the desktop layout.
+              <br>
+              <b>
+                Previous arrow horizontal Mobile offset(%):</b> Customize the horizontal placement of the previous arrow on mobile devices with a specified percentage offset. This adjustment is crucial for optimizing the arrow's position within the limited screen real estate of mobile interfaces, contributing to a smoother and more user-friendly navigation experience.
+              <br>
+              <b>
+                Next arrow horizontal Desktop offset(%):</b> Modify the horizontal positioning of the next arrow on desktop displays by providing a percentage offset. This setting allows for precise control over the left or right alignment of the next arrow, ensuring it complements the overall design and functionality of the desktop interface.
+              <br>
+              <b>Next arrow horizontal Mobile offset(%): </b> Define the horizontal placement of the next arrow on mobile screens with a designated percentage offset. This customization is essential for ensuring that the next arrow aligns harmoniously within the constraints of mobile layouts, enhancing the overall navigation experience on smaller screens.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section style settings
+            </th>
+            <td>
+              <b>Button Type:</b>There are three types of button <b>Primary Button</b>
+              <b>Secondary Button</b>, <b>Invert Button</b> you can change button style by selecting this options.
+              <br>
+              <b>Title box text alignment: </b> Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation.
+              <br>
+              <b>Title box bottom space: </b>Controls bottom space for title.
+              <br>
+              <b>Title box max width(px): </b>Define the maximum width of the title box to control the spatial dimensions of the displayed content.
+              <br>
+              <b>Title Color: </b>Set the color of the title text to establish the visual style and prominence of the primary content..
+              <br>
+              <b>Subtitle Color & Subtitle Background: </b>Customize the color of the subtitle text and its background, ensuring a harmonious and visually appealing combination for supplementary content within the title box.
+              <br>
+            </td>
+          </tr>
+          
         </tbody>
       </table>
     </section>
@@ -980,14 +1669,182 @@
       <p>By clicking the <b>add section</b> button, you can show other sections that can be added to the layout.</p>
       <img src="assets/images/feature-collection/21.png" alt="" class="img-fluid mt-2">
       <img src="assets/images/feature-collection/22.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">General Style</th>
+            <td>
+              <b>Enable full width section:</b> Enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="newsletter">
       <h1>Newsletter</h1>
       <img src="assets/images/feature-collection/23.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">General Style</th>
+            <td>
+              <b>Enable full width section:</b> Enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+              <b>Background position: </b>If you want to add background postition at first you have to add background image then you can add multiple position like <b>Top center, Top Left, Center center, Bottom center, Left Center, Left bottom, Left bottom, Right top, Right center, Right bottom</b>.
+              <br>
+              <b>Background size:</b> To handle background position you can add multiple option like: <b>Auto, Contain, Cover, Custom</b>. If set background size 'custom' then will work this field, also using size including 'px,em,%,rem etc.' like this '50%,10rem,300px'
+              <br>
+              <b>Dektop background custom size : </b> You can control custom background size for mobile.
+              <br>
+              <b>Mobile background custom size : </b> You can make custom background size for desktop.
+              <br>
+             
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+         
+          <tr>
+            <th scope="row">Title Settings</th>
+            <td> <b>Title:</b> used to change title of the particular section.
+              <br>
+              <b>Select title tag: </b> choose multiple title tag like h1,h2,h3,h4,h5,h6,p,div, span for tab section.
+              <br> 
+              <b>Font weight:</b> Manage multiple options to change font weight such as Light, Normal, Medium etc.
+              <br>
+              <b>Margin bottom:</b> Controls bottom margin fot newsletter section.
+              <br>
+              <b>Title text alignment: Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation.</b>
+              <br>
+              <b>Paragraph: </b>add some description text to input field.
+              <br>
+              <b>Content color: </b>Change color to content.
+              <br>
+              <b>Content font size: </b> Controls font size for content.
+              <br>
+              <b>Paragraph text alignment: </b>Customize text alignment in the title box with options for left, right, and center alignment, allowing for precise control over the visual presentation
+              <br>
+            </td>
+               
+          </tr>
+          <tr>
+            <th scope="row">Newsletter Form Settings</th>
+            <td> <b>Placeholder:</b> Change placeholder name in input type.
+              <br>
+              <b>Button text: </b> Used to change text for button.
+              <br> 
+              <b>Email Input Field Border Color:</b> Specify the border color for the email input field.
+              <br>
+              <b>Margin bottom:</b> Controls bottom margin fot newsletter section.
+              <br>
+              <b>Form Container Max Width:</b>Define the maximum width of the form container.
+              <br>
+              <b>Form Alignment: </b>Set the alignment for the form within its container.
+              <br>
+              <b>Button Type:</b>There are three types of button <b>Primary Button</b>,<b>Secondary Button</b>, <b>Invert Button</b> you can change button style by selecting this options.
+              <br>
+              <b>Container background:</b> Used to control background color for the container.
+              <br>
+              <b>Container border color:</b> Used to control container background color for the container
+            </td>
+               
+          </tr>
+        </tbody>
+      </table>
     </section>
     <section id="flip-box">
       <h1>Flip Box</h1>
       <img src="assets/images/feature-collection/24.jpg" alt="" class="img-fluid mt-2">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Settings</th>
+            <th scope="col">Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Flip box Style</th>
+            <td>
+              <b>Enable full width section:</b> Enables/disables width for product tab section.
+              <br>
+              <b>Background color:</b> change background color for section.
+              <br>
+              <b>Background gradient color:</b> change background gradient color for section.
+              <br>
+              <b>Background image:</b> used to change background color of tab section.
+              <br>
+         
+             
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Column gutter settings
+            </th>
+            <td>
+              <b>Desktop column gap(px):</b>Manage to gap between card for desktop devices. .
+              <br>
+              <b>Mobile column Gap(px):</b> Manage to gap between card for mobile devices.
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Section top spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">Section bottom spacing</th>
+            <td>There are two type of spacing for this padding and margin you can change space for desktop,tablet & mobiles. </td>
+          </tr>
+          <tr>
+            <th scope="row">General style</th>
+            <td><b>Flipbox desktop min heigth(px):</b> Used to change min height for flip box desktop version.<br><b>Flipbox mobile min heigth(px): </b> Used to change min height for flip box mobile version.</td>
+          </tr>
+        
+         
+        </tbody>
+      </table>
     </section>
     <section id="product-info">
       <h1>Products</h1>
